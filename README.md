@@ -15,7 +15,8 @@ To solve this problem, I've built a resume builder which takes data needed for t
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/60289522/211461227-c74de195-fdbb-45c8-a77b-b51551f75420.png">
 
 ## Run Instructions
-* **Requirement** : [Python](https://www.python.org/downloads/)
+* **Requirements** : [Python](https://www.python.org/downloads/)
+* Install pdflatex (For Mac Users you can execute `brew install --cask mactex`
 * Create an [OpenAI API Token](https://beta.openai.com/account/api-keys)
 * Replace the API Token in `gpt_summary.py`
 * Go to the desired folder and execute `make run`
