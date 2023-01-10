@@ -1,0 +1,130 @@
+
+\documentclass[letterpaper,10.8pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.575in}
+\addtolength{\evensidemargin}{-0.575in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE {Srinivas Koushik Kondubhatla}}} & Email : \href{mailto:srinivas.koushik4@gmail.com}{srinivas.koushik4@gmail.com}\\
+  \href{https://www.linkedin.com/in/srinivaskoushik4/}{Linkedin: 
+https://www.linkedin.com/in/srinivaskoushik4/} & Mobile : 
++13522839364 \\
+  \href{
+https://github.com/koushik4}{Github:
+https://github.com/koushik4} \\
+\end{tabular*}
+\section{Education}\resumeSubHeadingListStart
+    \resumeSubheading
+      {University Of Florida}{Gainesville,US}
+      {Master's in Computer Science;  GPA: 3.77}{Aug 2021 - May 2023}
+      
+	{\scriptsize \textit{Courses: Advance Data Structure, Distributed Operting System, Database System Implementation.}}
+	   
+    \resumeSubheading
+      {SASTRA University}{Tanjore,India}
+      {bacherlor of Technology in Information Technology;  GPA: 8.11}{Aug 2017 - May 2021}
+      
+	{\scriptsize \textit{Courses: Data Structures,Analysis of Algorithm, Computer Networks.}}
+	   
+    
+    \resumeSubHeadingListEnd
+    
+    \section{Skills Summary}
+	\resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Java,Python,C,Cpp,SQL}\resumeSubItem{Tools}{Django,Flask,Gatling}\resumeSubItem{Frameworks}{github,mecurial}\resumeSubHeadingListEnd\section{Experience}
+    \resumeSubheading
+    {Meta Platfom Inc}{California,USA}
+    {SDE Intern }{May 2022 - Aug 2022}
+    \begin{itemize}
+    \itemsep0em 
+    \item { Implemented thumbnail as an image preview for video push notification, increasing Facebook’s Monthly Active Users by 37.39k in 32 days}\item { Extended Retraction Framework functionality to retract push notifications when Facebook content is archived or deleted}\item { Developed memories notifications for Joined Facebook, Moved, and Travel}\item { Added new memories notification based on location to improve user engagement and increase Facebook’s Monthly Active Users}\item { Collaborated with Content Design Team to restart memories email notifications to test its impact on user participation}\end{itemize}
+    \resumeSubheading
+    {NortonLifeLock Ltd}{Chennai,India}
+    {SDE Intern }{Jan 2021 - Jul 2021}
+    \begin{itemize}
+    \itemsep0em 
+    \item { Migrated load testing tool from LoadRunner Controller to Gatling }\item { Created scripts to perform CRUD operations through continuous SOAP and REST API calls }\item { Remodelled load testing framework to fetch detailed results based on API and its use cases }\item { Automated tabulation of load testing results to eliminate manual errors and efforts }\item { Technologies used: Gatling, Scala, Splunk}\end{itemize}\section{Projects}
+        \resumeSubheading
+        {Twitter Clone using Actor Model}{Sept 2022 - Dec 2022}
+        {Backend Engineer}{\href{https://github.com/koushik4/Resume-Automation-using-ChatGPT}{github}}
+        \begin{itemize}
+        \itemsep0em 
+        \item { Developed a Twitter-like engine and web user interface with functionalities such as register, subscribe, tweet, retweet, and search queries based on hashtags and profiles. }\item { Simulated 10,000 active users to test the efficiency of the engine using a client test simulator. Technologies used: Erlang, Cowboy, HTML, CSS.}\end{itemize}
+        \resumeSubheading
+        {Peer-Peer file sharing system working similar to Bittorent}{Sept 2021 - Dec 2021}
+        {Networking Engineer}{\href{https://github.com/koushik4/Resume-Automation-using-ChatGPT}{github}}
+        \begin{itemize}
+        \itemsep0em 
+        \item { Developed an effective single user file-based data management system with SQL operations such as Select, Project, Group By, Join and Distinct. }\item { Implemented a basic query optimizer to improve query processing speed by 15%.}\end{itemize}
+
+    \end{document}
+    
