@@ -89,6 +89,8 @@ def heading(name, email, phone, linkedin, github):
 \\end{tabular*}
 '''
 
+# Education
+
 
 def education_start():
     return "\\section{Education}\\resumeSubHeadingListStart"
@@ -110,6 +112,8 @@ def education_end():
     \\resumeSubHeadingListEnd
     '''
 
+# Skills
+
 
 def skills_summary(languages="", tools="", framework=""):
     if len(languages) == 0 and tools == "" and framework == "":
@@ -126,6 +130,8 @@ def skills_summary(languages="", tools="", framework=""):
         s += '''\\resumeSubItem{Frameworks}{'''+framework+'''}'''
     s += "\\resumeSubHeadingListEnd"
     return s
+
+# Experience
 
 
 def experience_start():
@@ -152,6 +158,9 @@ def experience_end():
     return '''
     \\resumeSubHeadingListEnd
     '''
+
+# Project
+
 
 
 def project_start():
@@ -182,7 +191,10 @@ def project_end():
 
 
 def end():
-    return "\\end{document}"
+    return '''
+
+    \\end{document}
+    '''
 
 
 def get_latex_text(heading_list, skills_list, educations_list, experience_list, projects_list):
@@ -201,15 +213,15 @@ def get_latex_text(heading_list, skills_list, educations_list, experience_list, 
     latex += experience_start()
     for e in experience_list:
         latex += experience(e[0], e[1], e[2], e[3], e[4])
-    # latex += experience_end()
 
     latex += project_start()
     for e in projects_list:
         latex += projects(e[0], e[1], e[2], e[3], e[4])
-    # latex += project_end()
 
     latex += end()
-    with open("result/main.tex", "w") as f:
+
+    # Write the Latex code into a .tex file
+    with open("result/Resume.tex", "w") as f:
         f.write(latex)
         f.close()
     return latex
