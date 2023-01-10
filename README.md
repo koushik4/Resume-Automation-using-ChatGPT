@@ -23,7 +23,11 @@ To solve this problem, I've built a resume builder which takes data needed for t
 * For further fine-tuning, edit  `resume/Resume.tex`. 
 * To export to pdf run `pdflatex -interaction=nonstopmode result/Resume.tex` 
 
-## Resultant Resume
+## Results
+### UI
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/60289522/211463999-bd30781d-d4cd-46d0-98f1-c7d03fdafdd3.png">
+
+### Resultant Resume
 <img width="350" alt="image" src="https://user-images.githubusercontent.com/60289522/211461415-96f97ded-f909-4270-a589-8ba6887ff20c.png">
 
 ## Referenes
