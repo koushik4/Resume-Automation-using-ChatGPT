@@ -1,10 +1,13 @@
 from tkinter import *
 from gpt_summary import get_summary_for_resume,get_summary_for_projects
+import datetime
 
 EXPERIENCES = []
 PROJECTS = []
 EDUCATIONS = []
-
+months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+          "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"]
+years = [i for i in range(1950, 2100)]
 
 def project_top_level(root):
     global PROJECTS
@@ -26,14 +29,16 @@ def project_top_level(root):
     role_label.grid(row=2, column=1)
     role.grid(row=2, column=2)
 
-    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-              "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"]
+    year_variable = StringVar()
+    year_variable.set(datetime.date.today().year)
+    year1_variable = StringVar()
+    year1_variable.set(datetime.date.today().year)
 
     variable = StringVar()
     variable.set("Jan")
     frame = Frame(top)
     start_date_dropdown = OptionMenu(frame, variable, *months)
-    start_date_year = Text(frame, height=1, width=4)
+    start_date_year = OptionMenu(frame,year_variable, *years)
     Label(frame, text="Start Date").grid(row=1, column=1)
     start_date_dropdown.grid(row=1, column=2)
     start_date_year.grid(row=1, column=3)
@@ -41,14 +46,14 @@ def project_top_level(root):
     variable1 = StringVar()
     variable1.set("Jan")
     end_date_dropdown = OptionMenu(frame, variable1, *months)
-    end_date_year = Text(frame, height=1, width=4)
+    end_date_year = OptionMenu(frame,year1_variable, *years)
     Label(frame, text="End Date").grid(row=2, column=1)
     end_date_dropdown.grid(row=2, column=2)
     end_date_year.grid(row=2, column=3)
 
     frame.grid(row=4, column=1)
     jd = Text(top, height=10, width=50)
-    Label(top, text="Job Description:").grid(row=5, column=1)
+    Label(top, text="Explain your work in your own words:").grid(row=5, column=1)
     jd.grid(row=5, column=2)
 
     # Callback to Submit Button
@@ -58,10 +63,10 @@ def project_top_level(root):
         role_text = role.get("1.0", END).split("\n")[0]
         jd_text = jd.get("1.0", END)
         jd_text = get_summary_for_projects(jd_text)
-        start_year_text = start_date_year.get("1.0", END).split("\n")[0]
+        start_year_text = year_variable.get()
         start_month_text = variable.get()
         end_month_text = variable1.get()
-        end_year_text = end_date_year.get("1.0", END).split("\n")[0]
+        end_year_text = year1_variable.get()
         time_period = start_month_text+" "+start_year_text + \
             " - "+end_month_text+" "+end_year_text
         PROJECTS.append([project_name_text, time_period,
@@ -74,7 +79,6 @@ def project_top_level(root):
 
 def experience_top_level(root):
     global EXPERIENCES
-    # top = Frame(root)
     top = Toplevel()
     top.title("Resume Builder-Experience")
     company_name = Text(top, height=1, width=40)
@@ -92,14 +96,16 @@ def experience_top_level(root):
     role_label.grid(row=3, column=1)
     role.grid(row=3, column=2)
 
-    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-              "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"]
+    year_variable = StringVar()
+    year_variable.set(datetime.date.today().year)
+    year1_variable = StringVar()
+    year1_variable.set(datetime.date.today().year)
 
     variable = StringVar()
     variable.set("Jan")
     frame = Frame(top)
     start_date_dropdown = OptionMenu(frame, variable, *months)
-    start_date_year = Text(frame, height=1, width=4)
+    start_date_year = OptionMenu(frame,year_variable, *years)
     Label(frame, text="Start Date").grid(row=1, column=1)
     start_date_dropdown.grid(row=1, column=2)
     start_date_year.grid(row=1, column=3)
@@ -107,14 +113,14 @@ def experience_top_level(root):
     variable1 = StringVar()
     variable1.set("Jan")
     end_date_dropdown = OptionMenu(frame, variable1, *months)
-    end_date_year = Text(frame, height=1, width=4)
+    end_date_year = OptionMenu(frame,year1_variable, *years)
     Label(frame, text="End Date").grid(row=2, column=1)
     end_date_dropdown.grid(row=2, column=2)
     end_date_year.grid(row=2, column=3)
 
     frame.grid(row=4, column=1)
     jd = Text(top, height=10, width=50)
-    Label(top, text="Job Description:").grid(row=5, column=1)
+    Label(top, text="Explain your work in your own words:").grid(row=5, column=1)
     jd.grid(row=5, column=2)
 
     # Callback to Submit Button
@@ -124,10 +130,10 @@ def experience_top_level(root):
         role_text = role.get("1.0", END).split("\n")[0]
         jd_text = jd.get("1.0", END)
         jd_text = get_summary_for_resume(jd_text).replace("%", "\\%")
-        start_year_text = start_date_year.get("1.0", END).split("\n")[0]
+        start_year_text = year_variable.get()
         start_month_text = variable.get()
         end_month_text = variable1.get()
-        end_year_text = end_date_year.get("1.0", END).split("\n")[0]
+        end_year_text = year1_variable.get()
         time_period = start_month_text+" "+start_year_text + \
             " - "+end_month_text+" "+end_year_text
         EXPERIENCES.append([company_name_text, location_text,
@@ -146,14 +152,16 @@ def education_top_level(root):
     degree_name = Text(top, height=1, width=40)
     gpa = Text(top, height=1, width=4)
 
-    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-              "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"]
+    year_variable = StringVar()
+    year_variable.set(datetime.date.today().year)
+    year1_variable = StringVar()
+    year1_variable.set(datetime.date.today().year)
     variable = StringVar()
     variable.set("Jan")
-    frame = Frame(top)
 
+    frame = Frame(top)
     start_date_dropdown = OptionMenu(frame, variable, *months)
-    start_date_year = Text(frame, height=1, width=4)
+    start_date_year = OptionMenu(frame,year_variable, *years)
     Label(frame, text="Start Date").grid(row=1, column=1)
     start_date_dropdown.grid(row=1, column=2)
     start_date_year.grid(row=1, column=3)
@@ -162,7 +170,7 @@ def education_top_level(root):
     variable1.set("Jan")
 
     end_date_dropdown = OptionMenu(frame, variable1, *months)
-    end_date_year = Text(frame, height=1, width=4)
+    end_date_year = OptionMenu(frame,year1_variable, *years)
     Label(frame, text="End Date").grid(row=2, column=1)
     end_date_dropdown.grid(row=2, column=2)
     end_date_year.grid(row=2, column=3)
@@ -193,10 +201,10 @@ def education_top_level(root):
         degree_name_text = degree_name.get("1.0", END).split("\n")[0]
         gpa_text = gpa.get("1.0", END).split("\n")[0]
         relevent_courses_text = relevent_courses.get("1.0", END).split("\n")[0]
-        start_year_text = start_date_year.get("1.0", END).split("\n")[0]
+        start_year_text = year_variable.get()
         start_month_text = variable.get()
         end_month_text = variable1.get()
-        end_year_text = end_date_year.get("1.0", END).split("\n")[0]
+        end_year_text = year1_variable.get()
         time_period = start_month_text + " " + start_year_text + \
             " - " + end_month_text + " " + end_year_text
         EDUCATIONS.append([university_name_text, location_name_text,
