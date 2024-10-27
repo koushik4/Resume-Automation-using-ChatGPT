@@ -1,9 +1,7 @@
 # Resume Builder using ChatGPT
-## TRY OUT THE WEBSITE
-* Try WResume now: https://www.wresume.ai
-* Watch the Demo: https://www.youtube.com/watch?v=gkUCH-PbHkg&list=LL&index=3&t=20s
-* Share your experience: https://forms.gle/Xgt1XGKpwSqAGwus8
-  
+## Try Out the Website 
+* https://www.wresume.ai
+
 ## Motivation
 The most important part of applying for a job and getting an interview is having a very formal and concise resume. 
 The important part of building a resume are
@@ -15,7 +13,6 @@ To say the capabilities of ChatGPT are good is an understatment. OpenAI has buil
 
 To solve this problem, I've built a resume builder which takes data needed for the resume and use GPT to make the the job description formal. The description input doesn't have to be formal. 
  
-
 ## Architecture
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/60289522/211461227-c74de195-fdbb-45c8-a77b-b51551f75420.png">
 
@@ -35,6 +32,11 @@ To solve this problem, I've built a resume builder which takes data needed for t
 
 ### Resultant Resume
 <img width="350" alt="image" src="https://user-images.githubusercontent.com/60289522/211461415-96f97ded-f909-4270-a589-8ba6887ff20c.png">
+
+## This is now aviable for free
+* [WResume](https://www.wresume.ai/)
+* [WResume Demo Video](https://www.youtube.com/watch?v=gkUCH-PbHkg&list=LL&index=2&t=20s)
+* [Share your experience](https://forms.gle/Xgt1XGKpwSqAGwus8)
 
 ## Referenes
 * [OpenAI API documentation](https://beta.openai.com/docs/introduction)
