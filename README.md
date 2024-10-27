@@ -33,7 +33,7 @@ To solve this problem, I've built a resume builder which takes data needed for t
 ### Resultant Resume
 <img width="350" alt="image" src="https://user-images.githubusercontent.com/60289522/211461415-96f97ded-f909-4270-a589-8ba6887ff20c.png">
 
-## This is now aviable for free
+## This is now available for free
 * [WResume](https://www.wresume.ai/)
 * [WResume Demo Video](https://www.youtube.com/watch?v=gkUCH-PbHkg&list=LL&index=2&t=20s)
 * [Share your experience](https://forms.gle/Xgt1XGKpwSqAGwus8)
