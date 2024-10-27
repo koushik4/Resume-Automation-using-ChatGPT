@@ -1,4 +1,9 @@
 # Resume Builder using ChatGPT
+## TRY OUT THE WEBSITE
+* Try WResume now: https://www.wresume.ai
+* Watch the Demo: https://www.youtube.com/watch?v=gkUCH-PbHkg&list=LL&index=3&t=20s
+* Share your experience: https://forms.gle/Xgt1XGKpwSqAGwus8
+  
 ## Motivation
 The most important part of applying for a job and getting an interview is having a very formal and concise resume. 
 The important part of building a resume are
