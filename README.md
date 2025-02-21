@@ -1,6 +1,21 @@
 # Resume Builder using ChatGPT
 ## Try Out the Website 
 * https://www.wresume.ai
+* https://chromewebstore.google.com/detail/wresume-ai-generate-and-o/bnhbllmcopnkobibdhdhedpeofkemkoo
+
+## WResume is now available as a [Chrome Extension](https://chromewebstore.google.com/detail/wresume-ai-generate-and-o/bnhbllmcopnkobibdhdhedpeofkemkoo?authuser=0&hl=en-GB)
+Writing a resume doesn’t have to be a hassle. **WResume AI** helps you create and maintain **ATS-friendly** resume points whenever and wherever inspiration strikes. 
+- ✅ **Resume points Tailored to you** – Explain your work in your own words and WResume refines it into ATS-friendly, professional resume-ready points. 
+- ✅ **Save up to 10 resume points** – Shortlist your favorite resume points and make your future resume edits quick.
+- ✅ **Seamless integration** – Your saved points sync with [wresume.ai](https://wresume.ai) , so they're ready for your next resume edits.
+
+No more last-minute stress. No more struggling with words. Just fast resume building—on your terms.
+
+🚀 **Install now and let WResume be a part of your success story**
+
+**Tr Now: https://chromewebstore.google.com/detail/wresume-ai-generate-and-o/bnhbllmcopnkobibdhdhedpeofkemkoo?authuser=0&hl=en-GB**
+
+<img width="407" alt="image" src="https://github.com/user-attachments/assets/197fd8f5-f0f8-4a6c-97db-927d2124bd0c" />
 
 ## Motivation
 The most important part of applying for a job and getting an interview is having a very formal and concise resume. 
@@ -12,7 +27,8 @@ Now the problem of formatting is already been taken care of by using many custom
 To say the capabilities of ChatGPT are good is an understatment. OpenAI has built this amazing tool which can make our tasks easier and faster with reliable accuracy. 
 
 To solve this problem, I've built a resume builder which takes data needed for the resume and use GPT to make the the job description formal. The description input doesn't have to be formal. 
- 
+
+
 ## Architecture
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/60289522/211461227-c74de195-fdbb-45c8-a77b-b51551f75420.png">
 
